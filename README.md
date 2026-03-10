@@ -6,6 +6,8 @@ Upload a document, choose question type and output format, click Generate - Quer
 Built for teachers, students, trainers, coaching institutes, and anyone tired of manually crafting question papers or quizzing.
 
 ---
+### Live Demo
+https://querefy-production.up.railway.app
 
 ## Features
 
