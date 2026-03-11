@@ -51,7 +51,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 if GEMINI_API_KEY:
-    genai.configure(api_key=AIzaSyAul8kGFqSisJj0zrpOP5cTSO-c0-SyuW4)
+    genai.configure(api_key=GEMINI_API_KEY)
 
 # Google Form and Drive API scopes
 SCOPES_FORMS = ['https://www.googleapis.com/auth/forms.body']
@@ -833,6 +833,7 @@ if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
 
     app.run(host='0.0.0.0', port=port, debug=False)
+
 
 
 
