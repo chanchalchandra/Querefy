@@ -19,10 +19,7 @@ from docx.shared import Pt, Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from pptx import Presentation
 import json
-from google.oauth2.service_account import Credentials
 
-credentials_info = json.loads(os.environ["GOOGLE_CREDENTIALS"])
-creds = Credentials.from_service_account_info(credentials_info)
 app = Flask(__name__)
 
 # Rate limiting
@@ -836,5 +833,6 @@ if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
 
     app.run(host='0.0.0.0', port=port, debug=False)
+
 
 
